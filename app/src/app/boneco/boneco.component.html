@@ -1,0 +1,132 @@
+<ion-content fullscreen style="background-color: white" >
+
+  <!-- ---------------------------------------MODELO DO BONECO---------------------------------------------------- -->
+  <canvas [class.visivel]="turnOn" style="position: fixed; top: 60px;left: 0"  #rendererCanvas id="renderCanvas"></canvas>
+  <!-- ---------------------------------------FIM DO MODELO DO BONECO---------------------------------------------------- -->
+  <div style="width: 100%;
+            margin-top: 100px;
+margin-bottom: 70px">
+    <img [class.visivel]="!turnOn"  src="https://cdn.discordapp.com/attachments/620663264946421782/624685588288634900/Webp.net-gifmaker_1.gif">
+  </div>
+
+  <div style="
+            width: 100%;
+            margin: auto;
+            position: relative;
+            " class="">
+    <div style="left: 5%;
+                right: 5%;
+                        margin-top: 100px;
+                        ">
+      <div class="row">
+        <a class="btn" (click)="refresh()">refresh</a>
+      </div>
+      <div class="row">
+        <div class="col">
+          <a class="btn waves-effect waves-light black-text white" style=" background-color: #0bb8cc; border-radius: 10px;font-size: 10px;font-weight: bold" (click)="turnRostoOn()" >rosto</a>
+        </div>
+        <div class="col">
+          <a class="btn waves-effect waves-light" style="background-color: #0bb8cc; border-radius: 10px" (click)="exportFinal()" >criar</a>
+        </div>
+        <div class="col">
+          <a class="btn waves-effect waves-light black-text white" style=" background-color: #0bb8cc; border-radius: 10px;font-size: 10px;font-weight: bold" (click)="turnCorpoOn()" >corpo</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <ion-slides *ngIf="color" class="colors"  [options]="slideOptsColor">
+    <ion-slide   *ngFor="let color of Colors">
+      <div class="card black colorBox" style="margin-right: 20px" >
+        <img (click)="loadObject(acessorioName, color.hex)" [src]="color.img">
+      </div>
+    </ion-slide>
+  </ion-slides>
+
+
+  <div style="margin-top: 1rem" ></div>
+  <ion-segment *ngIf="corpo" color="white" scrollable="true" >
+    <ion-segment-button mode="md"  (click)="onCategoria('tenis')">
+      <ion-icon src="https://image.flaticon.com/icons/svg/2070/2070442.svg"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button mode="md"  (click)="onCategoria('meia')">
+      <ion-icon src="https://image.flaticon.com/icons/svg/2123/2123094.svg"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button mode="md"  (click)="onCategoria('calca')">
+      <ion-icon src="https://image.flaticon.com/icons/svg/2070/2070630.svg"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button mode="md"  (click)="onCategoria('saia')">
+      <ion-icon src="https://image.flaticon.com/icons/svg/2093/2093860.svg"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button mode="md"  (click)="onCategoria('cinto')">
+      <ion-icon src="https://image.flaticon.com/icons/svg/88/88834.svg"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button mode="md"  (click)="onCategoria('camisa')" >
+      <ion-icon src="https://image.flaticon.com/icons/svg/2047/2047898.svg"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button mode="md"  (click)="onCategoria('gravata')">
+      <ion-icon src="https://image.flaticon.com/icons/svg/2088/2088774.svg"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button mode="md"  (click)="onCategoria('cachecol')">
+      <ion-icon src="https://image.flaticon.com/icons/svg/1387/1387006.svg"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button mode="md"  (click)="onCategoria('luva')">
+      <ion-icon src="https://image.flaticon.com/icons/svg/2047/2047965.svg"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button mode="md"  (click)="onCategoria('relogio')">
+      <ion-icon src="https://image.flaticon.com/icons/svg/2088/2088716.svg"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button mode="md"  (click)="onCategoria('segurando')">
+      <ion-icon src="https://image.flaticon.com/icons/svg/64/64888.svg"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button mode="md"   (click)="onCategoria('vestido')">
+      <ion-icon src="https://image.flaticon.com/icons/svg/2055/2055641.svg"></ion-icon>
+    </ion-segment-button>
+  </ion-segment>
+  <ion-segment *ngIf="rosto" color="white" scrollable>
+    <ion-segment-button mode="md"   (click)="onCategoria('formato')">
+      <ion-icon src="https://image.flaticon.com/icons/svg/591/591744.svg"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button mode="md"  (click)="onCategoria('olho')">
+      <ion-icon src="https://image.flaticon.com/icons/svg/4/4451.svg"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button mode="md"  (click)="onCategoria('nariz')">
+      <ion-icon src="https://image.flaticon.com/icons/svg/1531/1531928.svg"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button mode="md"  (click)="onCategoria('barba')">
+      <ion-icon src="https://image.flaticon.com/icons/svg/273/273433.svg"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button mode="md"  (click)="onCategoria('oculos')">
+      <ion-icon src="https://image.flaticon.com/icons/svg/12/12177.svg"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button mode="md"  (click)="onCategoria('cabeloCurto')">
+      <ion-icon src="https://image.flaticon.com/icons/svg/40/40656.svg"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button mode="md"  (click)="onCategoria('orelha')">
+      <ion-icon src="https://image.flaticon.com/icons/svg/467/467717.svg"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button mode="md"  (click)="onCategoria('sobrancelha')">
+      <ion-icon src="https://image.flaticon.com/icons/svg/1438/1438482.svg"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button mode="md"  (click)="onCategoria('boca')">
+      <ion-icon src="https://image.flaticon.com/icons/svg/2047/2047535.svg"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button mode="md"  (click)="onCategoria('chapeu')">
+      <ion-icon src="https://image.flaticon.com/icons/svg/2057/2057013.svg"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button mode="md"  (click)="onCategoria('pinta')">
+      <ion-icon src="https://image.flaticon.com/icons/svg/288/288240.svg"></ion-icon>
+    </ion-segment-button>
+  </ion-segment>
+  <section style="margin-top: 0; margin-left: 1rem">
+    <ion-slides  [options]="slideOpts">
+      <ion-slide   *ngFor="let acessorio of Acessorios">
+        <div class="card acessorio-box" >
+          <img (click)="onAcessorioClick(acessorio.name)" [src]="acessorio.img">
+        </div>
+      </ion-slide>
+    </ion-slides>
+  </section>
+</ion-content>
+

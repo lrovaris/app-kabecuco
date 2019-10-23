@@ -1,0 +1,84 @@
+/*:host {
+  height: 20px;
+}*/
+
+input:focus {
+  border: none;
+  box-shadow: none;
+}
+
+.footer {
+  margin-top: -10;
+  position: relative;
+  bottom: 0;
+  height: 100px;
+  background-color: #0e96bd;
+}
+.header {
+  position: relative;
+  background-color: #0bb8cc;
+  top: 0;
+  height: 20px;
+}
+.headerBotton {
+  background-color: #0e96bd;
+  position: relative;
+  top: 20px;
+  height: 40px;
+}
+
+:root {
+  --ion-safe-area-top: 20px;
+  --ion-safe-area-bottom: 22px;
+}
+.swiper-slide {
+  display: block;
+}
+ion-slide > h2 {
+  margin-top: 2.8rem;
+}
+ion-slide > img {
+  max-height: 50%;
+  max-width: 60%;
+  margin: 36px 0;
+}
+
+.fut {
+  margin-top: 25%;
+  margin-bottom: 25%;
+}
+
+.reload {
+  border-radius: 10px;
+}
+
+.acessorio-box {
+  margin-top: 1rem;
+  height: 100px;
+  width: 100px;
+}
+
+.three {
+  background-image: url("https://cdn.discordapp.com/attachments/620663264946421782/624685588288634900/Webp.net-gifmaker_1.gif");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.visivel {
+  visibility: hidden;
+}
+
+.colors {
+  position: absolute;
+  top: 350px;
+  left: 50px;
+  right: 50px;
+  padding-bottom: 1px;
+  padding-top: 4px;
+  background-color: white;
+}
+
+.colorBox {
+  width: 60px;
+  height: 60px;
+}
