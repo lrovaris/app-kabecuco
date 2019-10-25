@@ -99,7 +99,7 @@ export class Load3DService implements OnDestroy {
     }
 
 
-    this.loader.load('/assets/menina_testes/cabeca/Menina_cabeca.stl', geometry => {
+    this.loader.load('/assets/cabeca/Menina_cabeca.stl', geometry => {
       let material = new THREE.MeshBasicMaterial( { color: "#000000" } );
       this.cabeca = new THREE.Mesh( geometry, material );
       var box = new THREE.Box3().setFromObject( this.cabeca );
@@ -110,7 +110,7 @@ export class Load3DService implements OnDestroy {
       this.cabeca.scale.set(1,1,1);
       this.scene.add(this.cabeca);
     }, function () {}, function () {});
-    this.loader.load('/assets/menina_testes/corpo/Menina_corpo.stl', geometry => {
+    this.loader.load('/assets/corpo/Menina_corpo.stl', geometry => {
       let material = new THREE.MeshBasicMaterial( { color: "#000000" } );
       this.corpo = new THREE.Mesh( geometry, material );
       var box = new THREE.Box3().setFromObject( this.corpo );

@@ -45,21 +45,79 @@ export class BonecoComponent implements OnInit {
   pintaName = '';
 
   // Cores Manuais -------------------------
-  azul = {
-    hex: "#0000ff",
-    name: "azul",
-    img: "https://www.colorcombos.com/images/colors/0000FF.png"
+  roxo = {
+    hex: '#382940',
+    img: "https://www.colorhexa.com/382940.png"
   };
-  vermelho = {
-    hex: "#ff0000",
-    name: "vermelho",
-    img: "https://www.colorcombos.com/images/colors/FF0000.png"
+  branco = {
+    hex: '#ffffff',
+    img: "https://www.colorhexa.com/ffffff.png"
+  };
+  azulClaro = {
+    hex: '#3399FF',
+    img: "https://www.colorhexa.com/3399FF.png"
+  };
+  azulClaro2 = {
+    hex: '#6FEDFD',
+    img: "https://www.colorhexa.com/6FEDFD.png"
   };
   verde = {
-    hex: "#00ff00",
-    name: "verde",
-    img: "http://html-color.org/pt/00FF00.jpg"
+    hex: '#7EE441',
+    img: "https://www.colorhexa.com/7EE441.png"
   };
+  verdeEscuro = {
+    hex: '#36855D',
+    img: "https://www.colorhexa.com/36855D.png"
+  };
+  laranja = {
+    hex: '#D2794F',
+    img: "https://www.colorhexa.com/D2794F.png"
+  };
+  marrom = {
+    hex: '#78353A',
+    img: "https://www.colorhexa.com/78353A.png"
+  };
+  vermelho = {
+    hex: '#E93F46',
+    img: "https://www.colorhexa.com/E93F46.png"
+  };
+  nude = {
+    hex: '#FFCD9C',
+    img: "https://www.colorhexa.com/FFCD9C.png"
+  };
+  amarelo = {
+    hex: '#FDC234',
+    img: "https://www.colorhexa.com/FDC234.png"
+  };
+  rosa = {
+    hex: '#C13FB7',
+    img: "https://www.colorhexa.com/C13FB7.png"
+  };
+  cinza = {
+    hex: '#7784B1',
+    img: "https://www.colorhexa.com/7784B1.png"
+  };
+  cinzaClaro = {
+    hex: '#B2BDC0',
+    img: 'https://www.colorhexa.com/B2BDC0.png'
+  };
+  amarelinho = {
+    hex: '#DCFF6F',
+    img: "https://www.colorhexa.com/DCFF6F.png"
+  };
+  rosaClaro = {
+    hex: '#FF80A9',
+    img: "https://www.colorhexa.com/FF80A9.png"
+  };
+  amarelo2 = {
+    hex: '#FCC135',
+    img: "https://www.colorhexa.com/FCC135.png"
+  };
+  amareloClaro = {
+    hex: '#FFF275',
+    img: "https://www.colorhexa.com/FFF275.png"
+  };
+
   // Cores Manuais -------------------------
   // itens manuais -------------------------------
   jaqueta = {
@@ -234,12 +292,7 @@ export class BonecoComponent implements OnInit {
   }
 
   constructor(private router: Router,
-              private formbuilder: FormBuilder,
               private engServ: Load3DService) {
-    this.avatar = this.formbuilder.group({
-      name: [null],
-      model_ids: [null]
-    });
   }
 
   onCategoria(x) {
@@ -410,18 +463,25 @@ export class BonecoComponent implements OnInit {
   ngOnInit() {
 
 
-    this.Colors.push(this.azul);
+
+    this.Colors.push(this.amarelo);
+    this.Colors.push(this.amarelo2);
+    this.Colors.push(this.cinza);
+    this.Colors.push(this.cinzaClaro);
+    this.Colors.push(this.rosa);
+    this.Colors.push(this.rosaClaro);
+    this.Colors.push(this.roxo);
     this.Colors.push(this.verde);
+    this.Colors.push(this.verdeEscuro);
+    this.Colors.push(this.amareloClaro);
+    this.Colors.push(this.nude);
+    this.Colors.push(this.marrom);
+    this.Colors.push(this.laranja);
     this.Colors.push(this.vermelho);
-    this.Colors.push(this.azul);
-    this.Colors.push(this.verde);
-    this.Colors.push(this.vermelho);
-    this.Colors.push(this.azul);
-    this.Colors.push(this.verde);
-    this.Colors.push(this.vermelho);
-    this.Colors.push(this.azul);
-    this.Colors.push(this.verde);
-    this.Colors.push(this.vermelho);
+    this.Colors.push(this.branco);
+    this.Colors.push(this.azulClaro);
+    this.Colors.push(this.azulClaro2);
+    this.Colors.push(this.amarelinho);
     this.turnOn = false;
     console.log(this.turnOn);
     this.engServ.animate();

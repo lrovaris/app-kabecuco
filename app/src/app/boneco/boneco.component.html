@@ -19,10 +19,7 @@ margin-bottom: 70px">
                         margin-top: 100px;
                         ">
       <div class="row">
-        <a class="btn" (click)="refresh()">refresh</a>
-      </div>
-      <div class="row">
-        <div class="col">
+        <div class="col" style=" margin-left: 1rem">
           <a class="btn waves-effect waves-light black-text white" style=" background-color: #0bb8cc; border-radius: 10px;font-size: 10px;font-weight: bold" (click)="turnRostoOn()" >rosto</a>
         </div>
         <div class="col">
@@ -38,8 +35,8 @@ margin-bottom: 70px">
 
   <ion-slides *ngIf="color" class="colors"  [options]="slideOptsColor">
     <ion-slide   *ngFor="let color of Colors">
-      <div class="card black colorBox" style="margin-right: 20px" >
-        <img (click)="loadObject(acessorioName, color.hex)" [src]="color.img">
+      <div class="card white colorBox" >
+        <img  (click)="loadObject(acessorioName, color.hex)" [src]="color.img">
       </div>
     </ion-slide>
   </ion-slides>
