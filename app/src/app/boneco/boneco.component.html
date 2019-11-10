@@ -1,7 +1,7 @@
 <ion-content fullscreen style="background-color: white" >
 
   <!-- ---------------------------------------MODELO DO BONECO---------------------------------------------------- -->
-  <canvas [class.visivel]="turnOn" style="position: fixed; top: 60px;left: 0"  #rendererCanvas id="renderCanvas"></canvas>
+  <canvas [class.visivel]="turnOn" style="position: fixed; top: -140px;left: 0"  #rendererCanvas id="renderCanvas"></canvas>
   <!-- ---------------------------------------FIM DO MODELO DO BONECO---------------------------------------------------- -->
   <div style="width: 100%;
             margin-top: 100px;
@@ -18,12 +18,12 @@ margin-bottom: 70px">
                 right: 5%;
                         margin-top: 100px;
                         ">
-      <div class="row">
+      <div class="row centralizar">
         <div class="col" style=" margin-left: 1rem">
           <a class="btn waves-effect waves-light black-text white" style=" background-color: #0bb8cc; border-radius: 10px;font-size: 10px;font-weight: bold" (click)="turnRostoOn()" >rosto</a>
         </div>
         <div class="col">
-          <a class="btn waves-effect waves-light" style="background-color: #0bb8cc; border-radius: 10px" (click)="exportFinal()" >criar</a>
+          <a class="btn waves-effect waves-light" style="background-color: #0bb8cc; border-radius: 10px" (click)="exportFinal('','')" >criar</a>
         </div>
         <div class="col">
           <a class="btn waves-effect waves-light black-text white" style=" background-color: #0bb8cc; border-radius: 10px;font-size: 10px;font-weight: bold" (click)="turnCorpoOn()" >corpo</a>
@@ -119,7 +119,7 @@ margin-bottom: 70px">
   <section style="margin-top: 0; margin-left: 1rem">
     <ion-slides  [options]="slideOpts">
       <ion-slide   *ngFor="let acessorio of Acessorios">
-        <div class="card acessorio-box" >
+        <div style="height: 70px; width: 70px" class="card acessorio-box" >
           <img (click)="onAcessorioClick(acessorio.name)" [src]="acessorio.img">
         </div>
       </ion-slide>

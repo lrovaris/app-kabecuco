@@ -81,10 +81,10 @@ export class Load3DService implements OnDestroy {
     this.scene = new THREE.Scene();
 
     this.camera = new THREE.PerspectiveCamera(
-        65, window.innerWidth / window.innerHeight, 1, 300
+        65, window.innerWidth / window.innerHeight, 1, 400
     );
     this.camera.position.z = 250;
-    this.camera.position.y = 8;
+    this.camera.position.y = 150;
     this.camera.type = "PerspectiveCamera";
     this.scene.add(this.camera);
 
@@ -107,7 +107,7 @@ export class Load3DService implements OnDestroy {
       this.cabeca.rotation.y = Math.PI;
       this.cabeca.rotation.x = Math.PI / 2;
       this.cabeca.rotation.y = Math.PI;
-      this.cabeca.scale.set(1,1,1);
+      this.cabeca.position.setY(55);
       this.scene.add(this.cabeca);
     }, function () {}, function () {});
     this.loader.load('/assets/corpo/Menina_corpo.stl', geometry => {
@@ -118,7 +118,7 @@ export class Load3DService implements OnDestroy {
       this.corpo.rotation.y = Math.PI;
       this.corpo.rotation.x = Math.PI / 2;
       this.corpo.rotation.y = Math.PI;
-      this.corpo.scale.set(1,1,1);
+      this.corpo.position.setY(55);
       this.scene.add(this.corpo);
 
     }, function () {}, function () {});
@@ -408,6 +408,7 @@ export class Load3DService implements OnDestroy {
     const blob = new Blob([stlString], {type: 'text/plain'});
     saveAs(blob, name + '.stl');
   }
+
 
   calcaLoad(_pathName, _color){
     this.loader.load('/assets/calca/'+_pathName, geometry => {

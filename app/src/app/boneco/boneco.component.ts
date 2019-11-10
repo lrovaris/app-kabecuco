@@ -489,7 +489,7 @@ export class BonecoComponent implements OnInit {
 
   }
 
-  exportFinal(){
+  exportFinal(corpo, corCorpo){
     if(this.camisaName){this.exportCamisa()}
     if(this.calcaName){this.exportCalca()}
     if(this.tenisName){this.exportTenis()}
@@ -513,8 +513,8 @@ export class BonecoComponent implements OnInit {
     if(this.orelhaName){this.exportOrelha()}
     if(this.formatoName){this.exportFormato()}
     if(this.oculosName){this.exportOculos()}
-    this.exportCorpo('corpo','#000');
-    this.exportCabeca('cabeca','#000');
+    this.exportCorpo(corpo,corCorpo);
+    this.exportCabeca(corpo,corCorpo);
   }
 
   exportCabeca(name, cor){

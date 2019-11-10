@@ -3,13 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="c990b199-7c55-42ee-ad10-fe859de8201b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/angular.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/app/app-routing.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/app/boneco/boneco.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/app/boneco/boneco.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/app/boneco/boneco.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/app/boneco/boneco.component.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/app/boneco/boneco.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/app/boneco/boneco.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/app/boneco/load3-d.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/app/boneco/load3-d.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/assets/camiseta/Camiseta.stl" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -49,8 +46,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/app/boneco/boneco.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="10879">
-              <caret line="478" column="35" selection-start-line="478" selection-start-column="35" selection-end-line="478" selection-end-column="35" />
+            <state relative-caret-position="23">
+              <caret line="598" column="3" selection-start-line="598" selection-start-column="3" selection-end-line="719" selection-end-column="5" />
               <folding>
                 <element signature="e#0#71#0" expanded="true" />
               </folding>
@@ -58,11 +55,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/app/boneco/boneco.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="38" column="13" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
+            <state relative-caret-position="-142">
+              <caret line="25" column="129" selection-start-line="25" selection-start-column="129" selection-end-line="25" selection-end-column="129" />
               <folding>
                 <element signature="n#style#0;n#ion-content#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#canvas#0;n#ion-content#0;n#!!top" expanded="true" />
@@ -70,6 +67,7 @@
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#ion-content#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#2;n#ion-content#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#section#0;n#ion-content#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#ion-slide#0;n#ion-slides#0;n#section#0;n#ion-content#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -78,17 +76,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/app/boneco/boneco.component.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1863">
-              <caret line="81" column="11" selection-start-line="81" selection-start-column="11" selection-end-line="81" selection-end-column="11" />
+            <state relative-caret-position="298">
+              <caret line="88" column="22" selection-start-line="88" selection-start-column="22" selection-end-line="88" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/app/boneco/load3-d.service.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2438">
-              <caret line="112" column="29" selection-start-line="112" selection-start-column="29" selection-end-line="112" selection-end-column="29" />
+            <state relative-caret-position="-34">
+              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
@@ -110,10 +108,20 @@
       <find>form</find>
       <find>push(this.a</find>
       <find>colorb</find>
+      <find>exportfinal</find>
+      <find>exportcamisa</find>
+      <find>exportg</find>
+      <find>export</find>
+      <find>load</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -123,10 +131,10 @@
         <option value="$PROJECT_DIR$/app/src/app/boneco/stlloader.ts" />
         <option value="$PROJECT_DIR$/app/angular.json" />
         <option value="$PROJECT_DIR$/app/src/app/app-routing.module.ts" />
-        <option value="$PROJECT_DIR$/app/src/app/boneco/load3-d.service.ts" />
-        <option value="$PROJECT_DIR$/app/src/app/boneco/boneco.component.ts" />
-        <option value="$PROJECT_DIR$/app/src/app/boneco/boneco.component.html" />
         <option value="$PROJECT_DIR$/app/src/app/boneco/boneco.component.scss" />
+        <option value="$PROJECT_DIR$/app/src/app/boneco/boneco.component.html" />
+        <option value="$PROJECT_DIR$/app/src/app/boneco/boneco.component.ts" />
+        <option value="$PROJECT_DIR$/app/src/app/boneco/load3-d.service.ts" />
       </list>
     </option>
   </component>
@@ -139,6 +147,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -157,26 +166,10 @@
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="app-kabecuco" type="b2602c69:ProjectViewProjectNode" />
-              <item name="app-kabecuco" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="app-kabecuco" type="b2602c69:ProjectViewProjectNode" />
-              <item name="app-kabecuco" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="boneco" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -210,16 +203,18 @@
       <updated>1571867155893</updated>
       <workItem from="1571867157726" duration="5176000" />
       <workItem from="1571938318128" duration="10000" />
+      <workItem from="1573235293477" duration="3458000" />
+      <workItem from="1573356565632" duration="1893000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5186000" />
+    <option name="totallyTimeSpent" value="10537000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24947146" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24947146" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -232,7 +227,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="TypeScript" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32923833" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -298,37 +293,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/app/boneco/boneco.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10879">
-          <caret line="478" column="35" selection-start-line="478" selection-start-column="35" selection-end-line="478" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#71#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/app/boneco/boneco.component.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1863">
-          <caret line="81" column="11" selection-start-line="81" selection-start-column="11" selection-end-line="81" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/app/boneco/load3-d.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2438">
-          <caret line="112" column="29" selection-start-line="112" selection-start-column="29" selection-end-line="112" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/app/boneco/boneco.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="38" column="13" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
+        <state relative-caret-position="-142">
+          <caret line="25" column="129" selection-start-line="25" selection-start-column="129" selection-end-line="25" selection-end-column="129" />
           <folding>
             <element signature="n#style#0;n#ion-content#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#canvas#0;n#ion-content#0;n#!!top" expanded="true" />
@@ -336,6 +304,34 @@
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#ion-content#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#2;n#ion-content#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#section#0;n#ion-content#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#ion-slide#0;n#ion-slides#0;n#section#0;n#ion-content#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/app/boneco/boneco.component.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="88" column="22" selection-start-line="88" selection-start-column="22" selection-end-line="88" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/app/boneco/boneco.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="598" column="3" selection-start-line="598" selection-start-column="3" selection-end-line="719" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#71#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/app/boneco/load3-d.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-34">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
           </folding>
         </state>
       </provider>
