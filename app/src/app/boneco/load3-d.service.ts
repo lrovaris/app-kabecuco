@@ -224,7 +224,7 @@ export class Load3DService implements OnDestroy {
     this.frameId = requestAnimationFrame(() => {
       this.render();
     });
-
+    /*this.renderer.setClearColor (0xff0000, 1);*/
     this.renderer.render(this.scene, this.camera);
   }
 

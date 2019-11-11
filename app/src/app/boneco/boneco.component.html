@@ -1,7 +1,7 @@
 <ion-content fullscreen style="background-color: white" >
 
   <!-- ---------------------------------------MODELO DO BONECO---------------------------------------------------- -->
-  <canvas [class.visivel]="turnOn" style="position: fixed; top: -140px;left: 0"  #rendererCanvas id="renderCanvas"></canvas>
+  <canvas [class.visivel]="turnOn" style="position: fixed; top: -180px;left: 0"  #rendererCanvas id="renderCanvas"></canvas>
   <!-- ---------------------------------------FIM DO MODELO DO BONECO---------------------------------------------------- -->
   <div style="width: 100%;
             margin-top: 100px;
@@ -119,8 +119,8 @@ margin-bottom: 70px">
   <section style="margin-top: 0; margin-left: 1rem">
     <ion-slides  [options]="slideOpts">
       <ion-slide   *ngFor="let acessorio of Acessorios">
-        <div style="height: 70px; width: 70px" class="card acessorio-box" >
-          <img (click)="onAcessorioClick(acessorio.name)" [src]="acessorio.img">
+        <div class="card acessorio-box" >
+          <img style="" (click)="onAcessorioClick(acessorio.name)" [src]="acessorio.img">
         </div>
       </ion-slide>
     </ion-slides>
