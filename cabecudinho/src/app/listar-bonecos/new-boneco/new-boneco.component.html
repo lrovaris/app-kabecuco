@@ -1,0 +1,46 @@
+<ion-content fullscreen >
+  <app-exibir-boneco></app-exibir-boneco>
+
+    <div class="card black">
+        <div class="card-content black">
+            <img src="https://picsum.photos/500/400">
+        </div>
+    </div>
+
+    <ion-segment  scrollable>
+        <ion-segment-button>
+            <ion-icon name="home"></ion-icon>
+        </ion-segment-button>
+        <ion-segment-button checked>
+            <ion-icon name="heart"></ion-icon>
+        </ion-segment-button>
+        <ion-segment-button>
+            <ion-icon name="pin"></ion-icon>
+        </ion-segment-button>
+        <ion-segment-button>
+            <ion-icon name="home"></ion-icon>
+        </ion-segment-button>
+        <ion-segment-button>
+            <ion-icon name="home"></ion-icon>
+        </ion-segment-button>
+        <ion-segment-button>
+            <ion-icon name="home"></ion-icon>
+        </ion-segment-button>
+
+    </ion-segment>
+<hr>
+<section style="margin-bottom: 3rem" >
+    <app-acessorios  style="padding-bottom: 2%"></app-acessorios>
+</section>
+
+    <ion-footer>
+
+
+        <div>
+            <div class="row">
+                <a class="btn waves-effect waves-light" style="background-color: #0bb8cc;margin-top: 2%" (click)="navigateListar(id)" >criar boneco</a>
+            </div>
+        </div>
+
+    </ion-footer>
+</ion-content>

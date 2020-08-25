@@ -1,0 +1,9 @@
+
+<ion-slides  [options]="slideOpts">
+  <ion-slide (click)="log(acessorio.id)" *ngFor="let acessorio of Acessorios">
+    <div class="card black">
+      <img class="responsive-img" [src]="acessorio.img">
+    </div>
+  </ion-slide>
+</ion-slides>
+<!--aaaaaaaaaaaaporraaaaaaaaaaaa-->

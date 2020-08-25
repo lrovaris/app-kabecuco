@@ -1,0 +1,7 @@
+{
+  "name": "cabecudinho",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

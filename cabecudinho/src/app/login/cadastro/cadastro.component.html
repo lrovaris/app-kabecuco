@@ -1,0 +1,86 @@
+<div [class.margin-cadastro]="innerWidth > 600">
+    <form (ngSubmit)="onSubmit()" [formGroup]="cliente">
+        <div class="row">
+            <hr>
+        </div>
+        <div class="row">
+            <div class="col s12">
+                <div class="input-field ">
+                    <input id="login" type="text" required class="validate" formControlName="login">
+                    <label for="login">Login</label>
+                    <span class="left-align" *ngFor="let validation of account_validation_messages.login">
+                        <span class="helper-text red-text" *ngIf="cliente.get('login').hasError(validation.type) && (cliente.get('login').dirty || cliente.get('login').touched)">{{validation.message}}</span>
+                   </span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12">
+                <div class="input-field ">
+                    <input (blur)="confirmPassword = inputPassword.value === inputConfirmPassword.value" #inputPassword id="password" type="password" required class="validate" formControlName="password">
+                    <label for="password">Senha</label>
+                    <span class="left-align" *ngFor="let validation of account_validation_messages.password">
+                        <span class="helper-text red-text" *ngIf="cliente.get('password').hasError(validation.type) && (cliente.get('password').dirty || cliente.get('password').touched)">{{validation.message}}</span>
+                   </span>
+
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12">
+                <div class="input-field ">
+                    <input formControlName="confirmPassword" #inputConfirmPassword (blur)="confirmPassword = inputPassword.value === inputConfirmPassword.value"  id="confirm-password" type="password" required class="validate">
+                    <label for="confirm-password">Confirmar Senha</label>
+                        <span class="helper-text red-text" *ngIf="!confirmPassword && (inputConfirmPassword.value.length > 0)" > as senhas precisam ser iguais </span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12">
+                <div class="input-field ">
+                    <input id="nome" type="text" required class="validate" formControlName="nome">
+                    <label for="nome">nome</label>
+                    <span class="left-align" *ngFor="let validation of account_validation_messages.nome">
+                        <span class="helper-text red-text" *ngIf="cliente.get('nome').hasError(validation.type) && (cliente.get('nome').dirty || cliente.get('nome').touched)">{{validation.message}}</span>
+                   </span>
+
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12">
+                <div class="input-field">
+                    <input id="email" type="email" required class="validate" formControlName="email">
+                    <label for="email">email</label>
+                    <span class="left-align" *ngFor="let validation of account_validation_messages.email">
+                        <span class="helper-text red-text" *ngIf="cliente.get('email').hasError(validation.type) && (cliente.get('email').dirty || cliente.get('email').touched)">{{validation.message}}</span>
+                   </span>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <ion-item>
+                    <ion-label>Concorda com os termos de uso?</ion-label>
+                    <ion-checkbox required formControlName="tos" color="primary" slot="start"></ion-checkbox>
+                </ion-item>
+            </div>
+        </div>
+
+        <div class="center-align">
+            <div class="row">
+                <div class="col s12 m6">
+                    <button style="margin-top: 1rem" type="submit" [class.disabled]="cliente.invalid" class="waves-effect waves-light btn black" (click)="navigateLogin()">cadastrar</button>
+                </div>
+                <div class="col s12 m6">
+                    <a style="margin-top: 1rem" class="waves-effect waves-light btn black" (click)="navigateLogin()">voltar</a>
+                </div>
+            </div>
+        </div>
+    </form>
+
+
+
+</div>

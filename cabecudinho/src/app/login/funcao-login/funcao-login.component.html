@@ -1,0 +1,32 @@
+
+<form (ngSubmit)="navigateLogin()" [formGroup]="user">
+
+  <div [class.margin-login]="innerWidth < 600">
+    <div class="row" style="margin-top: 2rem">
+      <div class="col s12">
+        <div class="input-field">
+          <input name="login" formControlName="login" id="login" type="text" class="validate">
+          <label for="login">Login</label>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12">
+        <div class="input-field">
+          <input formControlName="password" name="password" id="password" type="password" class="validate">
+          <label for="password">Senha</label>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <button type="submit"  class="waves-effect waves-light btn hoverable" style="margin-right: 1rem; margin-top: 1rem; background-color: #0bb8cc">Login</button>
+      <a class="waves-effect waves-light btn hoverable" style="margin-top: 1rem; background-color: #0bb8cc" (click)="navigateCadastro()">cadastro</a>
+    </div>
+    <!--div class="row">
+      <div class="col m12 s12">
+        <p style="cursor: pointer;margin-left: 25%;margin-right: 25%" (click)="navigateEsqueci()">esqueci senha</p>
+      </div>
+      minor change for commit
+    </div-->
+  </div>
+</form>
