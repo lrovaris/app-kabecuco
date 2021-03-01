@@ -35,7 +35,7 @@
     "jwt-decode": "^2.2.0",
     "materialize-css": "^1.0.0",
     "node-sass": "^4.12.0",
-    "three": "^0.106.2",
+    "three": "^0.125.0",
     "three-stlexporter": "^1.0.0",
     "threejs-export-stl": "0.0.4"
   },
